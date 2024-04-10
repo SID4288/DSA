@@ -12,20 +12,26 @@ class Node{
     
     };
 
-    class linkedList
+    class LinkedList
     {
     private:
-        /* data */
+       Node* HEAD;
+       Node* TAIL;
     public:
-        linkedList(/* args */);
-        ~linkedList();
+        LinkedList();
+        ~LinkedList();
+
+        void add(Node *pred, int data);
+        void addToHead(int data);
+        void addToTail(int data);
+
+        bool remove(int data);
+        bool removeFromHead(int &data);
+        bool removeFromTail(int &data);
+
+        bool isEmpty();
+        void head(int &data);
+        void print(char seperator);
     };
     
-    linkedList::linkedList(/* args */)
-    {
-    }
-    
-    linkedList::~linkedList()
-    {
-    }
-    
+        
