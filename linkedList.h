@@ -32,6 +32,7 @@ class Node{
         bool isEmpty();
         void head(int &data);
         void print(char seperator);
+        void traverse();
     };
     
         

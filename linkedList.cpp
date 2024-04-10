@@ -24,3 +24,27 @@ void LinkedList::print(char seperator){
         cout<< t->info <<seperator;
     }
 }
+void LinkedList::traverse(){
+    Node *p = HEAD;
+    while(p!=NULL){
+        cout<<p->info<<endl;
+        p=p->next;
+    }
+
+}
+
+bool LinkedList::removeFromTail(int &x){
+    if(!isEmpty){
+        Node *nodeToDelete = TAIL;
+        if(HEAD==TAIL){
+            HEAD = NULL;
+            TAIL = NULL;
+        }
+        else{
+            Node *pred = HEAD;
+            while (pred->next){
+                
+            }
+        }
+    }
+}
