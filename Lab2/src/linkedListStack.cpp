@@ -18,3 +18,12 @@ private:
 void linkedListStack::push(int item){
     l.addToHead(4);
 };
+
+/*
+git config --global user.name/email "name"/"email"
+git clone <repo link>
+aafno branch ma xirni
+git add . 
+git commit -m ""
+git push
+*/
