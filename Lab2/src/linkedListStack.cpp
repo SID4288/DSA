@@ -16,5 +16,4 @@ linkedListStack::linkedListStack(){}
 linkedListStack::~linkedListStack(){}
 
 void linkedListStack::push(int item){
-    l.addtoHead(item);
 }
