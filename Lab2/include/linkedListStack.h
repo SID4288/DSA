@@ -5,7 +5,7 @@ class linkedListStack
 public:
     linkedListStack();
     ~linkedListStack();
-
+    
     void push(int item);
     int pop();
     int top();
