@@ -1,5 +1,3 @@
-#ifndef LINKEDLIST_H
-#define LINKEDLIST_H
 
 #include "Node.h"
 #include <iostream>
@@ -25,4 +23,3 @@ public:
     Node* getHead() const { return head; }
 };
 
-#endif
