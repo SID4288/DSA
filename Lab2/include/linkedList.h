@@ -1,39 +1,37 @@
-#include <iostream>
-#define linkedList_h
-
-class Node{
+#pragma once
+class Node
+{
     public:
-    int info;
-    Node *next;
+        int data;
+        Node *next;
 
-    Node(){}
-    Node(int d):info(d),next(NULL){}
-    Node(int d, Node *next):info(d),next(next){}
-    
-    };
+        Node(){}
+        Node(int d): data(d),next(nullptr) {}
+        Node(int d,Node*next): data(d),next(next) {}
+};
 
-    class LinkedList
-    {
+
+
+class LinkedList
+{
     private:
-       Node* HEAD;
-       Node* TAIL;
+        Node *HEAD;
+        Node *TAIL;
+    
     public:
         LinkedList();
-        ~LinkedList();
+       
 
-        void add(Node *pred, int data);
+        void add(Node *pred,int data);
         void addToHead(int data);
         void addToTail(int data);
-
-        bool remove(int data);
+        void Traverse();
+        void reverse();
+        bool remove(int &data);
         bool removeFromHead(int &data);
         bool removeFromTail(int &data);
-
         bool isEmpty();
-        void head(int &data);
-        void print(char seperator);
-        void traverse();
-    };
+        void HeadReturn(int &element);
+        bool TailReturn(int &element);
 
-    
-        
+};
