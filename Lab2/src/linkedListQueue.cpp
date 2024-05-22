@@ -71,6 +71,4 @@ int main() {
 
     std::cout << "Queue contents after dequeuing: ";
     queue.traverse();
-
-    return 0;
 }
